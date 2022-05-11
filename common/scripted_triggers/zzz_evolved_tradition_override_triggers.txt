@@ -1,0 +1,160 @@
+# T R A D I T I O N S
+# -------------- MERGERS ----------------
+tec_can_adopt_outreach = {
+	OR = {
+		has_tradition = tr_expansion_finish
+		has_tradition = tr_est_biogenesis_finish
+		# nature
+		custom_tooltip = {
+			fail_text  = est_nature_finish_trigger
+			OR = {
+				has_tradition = tr_est_nature_finish
+				has_tradition = tr_est_nature_finish_AI
+				has_tradition = tr_est_nature_finish_hive
+				has_tradition = tr_est_nature_finish_machines
+			}
+		}
+		# nature end
+	}
+}
+
+tec_can_adopt_control = {
+	OR = {
+		has_tradition = tr_domination_finish
+		has_tradition = tr_subterfuge_finish
+		has_tradition = tr_est_cooperativity_finish
+		has_tradition = tr_est_justice_finish
+		has_tradition = tr_est_mystery_finish
+		has_tradition = tr_est_order_finish
+		has_tradition = tr_est_proselytism_finish
+		has_tradition = tr_est_subminds_finish
+	}
+}
+
+tec_can_adopt_artifice = {
+	OR = {
+		has_tradition = tr_prosperity_finish
+		has_tradition = tr_mercantile_finish
+		custom_tooltip = {
+			fail_text  = est_commerce_finish_trigger
+			OR = {
+				has_tradition = tr_est_commerce_finish
+				has_tradition = tr_est_commerce_finish_machine_trader
+			}
+		}
+		has_tradition = tr_est_desires_finish
+		has_tradition = tr_est_industry_finish
+		has_tradition = tr_est_greed_finish
+		has_tradition = tr_est_mechanicum_finish
+		has_tradition = tr_est_spaceborn_finish
+	}
+}
+
+tec_can_adopt_balance = {
+	OR = {
+		has_tradition = tr_harmony_finish
+		has_tradition = tr_synchronicity_finish
+		has_tradition = tr_est_aesthetics_adopt
+		has_tradition = tr_est_collectivism_finish
+		# Faith
+		custom_tooltip = {
+			fail_text  = est_faith_finish_trigger
+			OR = {
+				has_tradition = tr_est_faith_finish
+				has_tradition = tr_est_faith_finish_authoritarian
+				has_tradition = tr_est_faith_finish_egalitarian
+				has_tradition = tr_est_faith_finish_materialist
+				has_tradition = tr_est_faith_finish_spiritualist
+				has_tradition = tr_est_faith_finish_militarist
+				has_tradition = tr_est_faith_finish_pacifist
+				has_tradition = tr_est_faith_finish_xenophile
+				has_tradition = tr_est_faith_finish_xenophobe
+				has_tradition = tr_est_faith_finish_pluralist
+				has_tradition = tr_est_faith_finish_elitist
+				has_tradition = tr_est_faith_finish_green
+				has_tradition = tr_est_faith_finish_industrial
+				has_tradition = tr_est_faith_finish_socialism
+				has_tradition = tr_est_faith_finish_capitalism
+			}
+		}
+		# End faith
+		has_tradition = tr_est_individualism_finish
+		has_tradition = tr_est_liberty_finish
+		has_tradition = tr_est_philosophy_finish
+		has_tradition = tr_est_purposefullness_finish
+		has_tradition = tr_est_venerability_finish
+	}
+}
+
+tec_can_adopt_might = {
+	OR = {
+		has_tradition = tr_supremacy_finish
+		has_tradition = tr_unyielding_finish
+		custom_tooltip = {
+			fail_text  = est_chivalry_finish_trigger
+			OR = {
+				has_tradition = tr_est_chivalry_finish
+				has_tradition = tr_est_chivalry_finish_AI
+			}
+		}
+		custom_tooltip = {
+			fail_text  = est_destruction_finish_trigger
+			OR = {
+				has_tradition = tr_est_destruction_finish
+				has_tradition = tr_est_destruction_finish_passive_ai
+			}
+		}
+		has_tradition = tr_est_fury_finish
+		has_tradition = tr_est_isolation_finish
+		has_tradition = tr_est_malice_finish
+		has_tradition = tr_est_might_finish
+		has_tradition = tr_est_militarism_finish
+		has_tradition = tr_est_perseverance_finish
+		custom_tooltip = {
+			fail_text  = est_piracy_finish_trigger
+			OR = {
+				has_tradition = tr_est_piracy_finish
+				has_tradition = tr_est_piracy_finish_passive_AI
+			}
+		}
+		has_tradition = tr_est_swarm_finish
+	}
+}
+
+tec_can_adopt_statecraft = {
+	OR = {
+		has_tradition = tr_diplomacy_finish
+		has_tradition = tr_versatility_finish
+		has_tradition = tr_adaptability_finish
+		has_tradition = tr_est_administratum_finish
+		has_tradition = tr_est_benevolence_finish
+		has_tradition = tr_est_confederacy_finish
+		has_tradition = tr_est_foundation_finish
+		has_tradition = tr_est_friendship_finish
+		has_tradition = tr_est_omnipresence_finish
+	}
+}
+
+tec_can_adopt_invention = {
+	OR = {
+		has_tradition = tr_discovery_finish
+		has_tradition = tr_est_academy_finish
+		has_tradition = tr_est_archivist_finish
+		custom_tooltip = {
+			fail_text  = est_piracy_finish_trigger
+			OR = {
+				has_tradition = tr_est_cybernetics_finish
+				has_tradition = tr_est_cybernetics_finish_AI
+			}
+		}
+		custom_tooltip = {
+			fail_text  = est_hacking_finish_trigger
+			OR = {
+				has_tradition = tr_est_hacking_finish
+				has_tradition = tr_est_hacking_finish_terminator
+			}
+		}
+		has_tradition = tr_est_serverbound_finish
+		has_tradition = tr_est_shroudborn_finish
+	}
+}

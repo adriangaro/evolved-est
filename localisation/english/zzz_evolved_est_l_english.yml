@@ -1,0 +1,38 @@
+﻿l_english:
+
+tr_est_commerce_2_machine_traders:0 "Optimized Local Production"
+tr_est_commerce_2_machine_traders_desc:0 "Unlocks three planetary decisions, increasing planet £energy  §YEnergy Credit§!, £food  §YFood§!, or £minerals  §YMineral§! output by §G+20%§!, while reducing the output of the other two by §R-15%§!."
+tr_est_commerce_2_machine_traders_delayed:0 "Introducing planetary production subminds reduces the computational waste on the gestalt conciouness, allowing planetary subminds to take the decisions regarding local production and its optimization for the purpose of seamless adaptability."
+
+tr_est_commerce_3_machine_traders:0 "Financial Synergy"
+tr_est_commerce_3_machine_traders_delayed:0 "Soon after our counciouness met its first galactic neighbors, it became clear that our financial system inherited from our creators was not compatible with the wider galactic market. That ancient system of finance must be brought in line with the rest of the galaxy."
+
+tr_est_commerce_4_machine_traders:0 "Safe Trade Relays"
+tr_est_commerce_4_machine_traders_desc:0 "§YTrade Protection§! increased by §G5§! throughout our empire."
+tr_est_commerce_4_machine_traders_delayed:0 "We have optimized the paths for safer relocation and delivery of necesary goods to reduce the risk of external interference."
+
+tr_est_commerce_5_machine_traders:0 "Trading Algorithms"
+tr_est_commerce_5_machine_traders_delayed:0 "Our trading software is a boon for both us and other empires which wish to enstablish profitable enterprise with out conciousness."
+
+
+est_faith_finish.option.pluralist:0 "$ethic_pluralist$ Ethic"
+est_faith_finish_pluralist_tooltip:0 "§Y$ethic_pluralist$ Ethic Attraction§! increased by §G+50%§!."
+est_faith_finish.option.elitist:0 "$ethic_elitist$ Ethic"
+est_faith_finish_elitist_tooltip:0 "§Y$ethic_elitist$ Ethic Attraction§! increased by §G+50%§!."
+est_faith_finish.option.green:0 "$ethic_green$ Ethic"
+est_faith_finish_green_tooltip:0 "§Y$ethic_green$ Ethic Attraction§! increased by §G+50%§!."
+est_faith_finish.option.industrial:0 "$ethic_industrial$ Ethic"
+est_faith_finish_industrial_tooltip:0 "§Y$ethic_industrial$ Ethic Attraction§! increased by §G+50%§!."
+est_faith_finish.option.socialism:0 "$ethic_socialism$ Ethic"
+est_faith_finish_socialism_tooltip:0 "§Y$ethic_socialism$ Ethic Attraction§! increased by §G+50%§!."
+est_faith_finish.option.capitalism:0 "$ethic_capitalism$ Ethic"
+est_faith_finish_capitalism_tooltip:0 "§Y$ethic_capitalism$ Ethic Attraction§! increased by §G+50%§!."
+
+est_faith_finish_trigger:0 "Has §Y$tr_est_faith_finish$§! Tradition"
+est_chivalry_finish_trigger:0 "Has §Y$tr_est_chivalry_finish$§! Tradition"
+est_destruction_finish_trigger:0 "Has §Y$tr_est_destruction_finish$§! Tradition"
+est_piracy_finish_trigger:0 "Has §Y$tr_est_piracy_finish$§! Tradition"
+est_cybernetics_finish_trigger:0 "Has §Y$tr_est_cybernetics_finish$§! Tradition"
+est_hacking_finish_trigger:0 "Has §Y$tr_est_hacking_finish$§! Tradition"
+est_nature_finish_trigger:0 "Has §Y$tr_est_nature_finish$§! Tradition"
+est_commerce_finish_trigger:0 "Has §Y$tr_est_commerce_finish$§! Tradition"

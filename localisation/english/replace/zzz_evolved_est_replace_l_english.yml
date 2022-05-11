@@ -1,0 +1,12 @@
+﻿l_english:
+
+
+tradition_est_might:0 "Strength"
+
+tr_est_might_adopt:0 "Strength Traditions"
+
+tr_est_might_finish:0 "Strength Traditions Finished"
+
+
+est_faith_finish.option.egalitarian:0 "$ethic_egalitarian$ Ethic"
+est_faith_finish_egalitarian_tooltip:0 "§Y$ethic_egalitarian$ Ethic Attraction§! increased by §G+50%§!."

@@ -1,0 +1,159 @@
+
+namespace = est_archivist
+
+#Archivist 5, updates unity from techs.
+country_event = {
+	id = est_archivist.7
+	hide_window = yes
+	is_triggered_only = yes
+		
+	immediate = {
+		change_variable = { which = evolved_est_tech_researched_count value = 1 }
+		country_event = {
+			id = est_archivist.8
+		}
+	}
+}
+
+#Archivist 5, updates unity bonus.
+country_event = {
+	id = est_archivist.8 
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = { has_tradition = tr_est_archivist_5 }
+			set_variable = {
+				which = evolved_est_tech_researched_count_temp
+				value = evolved_est_tech_researched_count
+			}
+			divide_variable = {
+				which = evolved_est_tech_researched_count_temp
+				value = 4
+			}
+	
+			remove_modifier = mod_est_archivist_1
+			add_modifier = {
+				modifier = mod_est_archivist_1
+				multiplier = evolved_est_tech_researched_count_temp
+				days = -1
+			}
+		}
+	}
+}
+
+
+namespace = est_faith
+
+#Faith finish, select an ethic.
+country_event = {
+	id = est_faith.1
+	is_triggered_only = yes
+	title = "est_faith_finish.name"
+	desc =  "est_faith_finish.desc"
+	picture = GFX_evt_psionics
+	
+	trigger = {
+		has_active_tradition = tr_est_faith_finish
+	}
+	
+	option = {
+		name = "est_faith_finish.option.authoritarian"
+		custom_tooltip = "est_faith_finish_authoritarian_tooltip"
+		hidden_effect = {
+			set_country_flag = flag_est_faith_finish_authoritarian
+		}
+	}
+	option = {
+		name = "est_faith_finish.option.egalitarian"
+		custom_tooltip = "est_faith_finish_egalitarian_tooltip"
+		hidden_effect = {
+			set_country_flag = flag_est_faith_finish_egalitarian
+		}
+	}
+	option = {
+		name = "est_faith_finish.option.materialist"
+		custom_tooltip = "est_faith_finish_materialist_tooltip"
+		hidden_effect = {
+			set_country_flag = flag_est_faith_finish_materialist
+		}
+	}
+	option = {
+		name = "est_faith_finish.option.spiritualist"
+		custom_tooltip = "est_faith_finish_spiritualist_tooltip"
+		hidden_effect = {
+			set_country_flag = flag_est_faith_finish_spiritualist
+		}
+	}
+	option = {
+		name = "est_faith_finish.option.militarist"
+		custom_tooltip = "est_faith_finish_militarist_tooltip"
+		hidden_effect = {
+			set_country_flag = flag_est_faith_finish_militarist
+		}
+	}
+	option = {
+		name = "est_faith_finish.option.pacifist"
+		custom_tooltip = "est_faith_finish_pacifist_tooltip"
+		hidden_effect = {
+			set_country_flag = flag_est_faith_finish_pacifist
+		}
+	}
+	option = {
+		name = "est_faith_finish.option.xenophile"
+		custom_tooltip = "est_faith_finish_xenophile_tooltip"
+		hidden_effect = {
+			set_country_flag = flag_est_faith_finish_xenophile
+		}
+	}
+	option = {
+		name = "est_faith_finish.option.xenophobe"
+		custom_tooltip = "est_faith_finish_xenophobe_tooltip"
+		hidden_effect = {
+			set_country_flag = flag_est_faith_finish_xenophobe
+		}
+	}
+	option = {
+		name = "est_faith_finish.option.pluralist"
+		custom_tooltip = "est_faith_finish_pluralist_tooltip"
+		hidden_effect = {
+			set_country_flag = flag_est_faith_finish_pluralist
+		}
+	}
+	option = {
+		name = "est_faith_finish.option.elitist"
+		custom_tooltip = "est_faith_finish_elitist_tooltip"
+		hidden_effect = {
+			set_country_flag = flag_est_faith_finish_elitist
+		}
+	}
+	option = {
+		name = "est_faith_finish.option.green"
+		custom_tooltip = "est_faith_finish_green_tooltip"
+		hidden_effect = {
+			set_country_flag = flag_est_faith_finish_green
+		}
+	}
+	option = {
+		name = "est_faith_finish.option.industrial"
+		custom_tooltip = "est_faith_finish_industrial_tooltip"
+		hidden_effect = {
+			set_country_flag = flag_est_faith_finish_industrial
+		}
+	}
+	option = {
+		name = "est_faith_finish.option.socialism"
+		custom_tooltip = "est_faith_finish_socialism_tooltip"
+		hidden_effect = {
+			set_country_flag = flag_est_faith_finish_socialism
+		}
+	}
+	option = {
+		name = "est_faith_finish.option.capitalism"
+		custom_tooltip = "est_faith_finish_capitalism_tooltip"
+		hidden_effect = {
+			set_country_flag = flag_est_faith_finish_capitalism
+		}
+	}
+}
