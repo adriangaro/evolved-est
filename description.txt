@@ -21,6 +21,14 @@
 [*] Stellaris Evolved + Expanded Stellaris Traditions
 [/list]
 
+[h1]Contacts And Links[/h1]
+[list]
+[*] Discord: MrRoAdd#4232
+[*] Github: https://github.com/adriangaro/evolved-est
+[*] Contributions, bug reports and fixes are appreciated!
+[/list]
+
+
 [h1]Thanks[/h1]
 [b]Girion[/b]
 For an amazing mod which adds so much more choice and makes unity more important.
