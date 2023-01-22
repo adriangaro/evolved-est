@@ -1,0 +1,31 @@
+# tr_est_hacking_adopt
+
+tr_est_hacking_finish = {
+	modifier = {
+		rivalries_influence_produces_mult = 0.30
+		ascension_perks_add = 1
+	}
+	
+	tradition_swap = {
+		name = tr_est_hacking_finish_terminator
+		trigger = {
+			est_no_rivals = yes
+		}	
+		modifier = {
+			army_morale_damage_mult = 0.25
+			ascension_perks_add = 1
+		}
+		weight = { factor = 1 }
+	}
+}
+
+
+# tr_est_hacking_1
+
+# tr_est_hacking_2
+
+# tr_est_hacking_3 
+
+# tr_est_hacking_4
+
+# tr_est_hacking_5 

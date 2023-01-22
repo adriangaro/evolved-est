@@ -1,0 +1,149 @@
+# tr_est_faith_adopt 
+
+tr_est_faith_finish = {
+	on_enabled = {
+		country_event = {
+			id = est_faith.1
+		}
+	}
+	modifier = {	
+		ascension_perks_add = 1
+	}
+	tradition_swap = {
+		name = tr_est_faith_finish_authoritarian
+		trigger = {	 has_country_flag = flag_est_faith_finish_authoritarian }	
+		modifier = {	
+			pop_ethic_authoritarian_attraction_mult = 0.50
+			ascension_perks_add = 1
+		}
+		weight = { factor = 1 }
+	}
+	tradition_swap = {
+		name = tr_est_faith_finish_egalitarian
+		trigger = { has_country_flag = flag_est_faith_finish_egalitarian }	
+		modifier = {	
+			pop_ethic_egalitarian_attraction_mult = 0.50
+			ascension_perks_add = 1
+		}
+		weight = { factor = 1 }
+	}
+	tradition_swap = {
+		name = tr_est_faith_finish_materialist
+		trigger = { has_country_flag = flag_est_faith_finish_materialist }	
+		modifier = {	
+			pop_ethic_materialist_attraction_mult = 0.50
+			ascension_perks_add = 1
+		}
+		weight = { factor = 1 }
+	}
+	tradition_swap = {
+		name = tr_est_faith_finish_spiritualist
+		trigger = {	 has_country_flag = flag_est_faith_finish_spiritualist }	
+		modifier = {	
+			pop_ethic_spiritualist_attraction_mult = 0.50
+			ascension_perks_add = 1
+		}
+		weight = { factor = 1 }
+	}
+	tradition_swap = {
+		name = tr_est_faith_finish_militarist
+		trigger = {	 has_country_flag = flag_est_faith_finish_militarist }	
+		modifier = {	
+			pop_ethic_militarist_attraction_mult = 0.50
+			ascension_perks_add = 1
+		}
+		weight = { factor = 1 }
+	}
+	tradition_swap = {
+		name = tr_est_faith_finish_pacifist
+		trigger = {	has_country_flag = flag_est_faith_finish_pacifist }	
+		modifier = {	
+			pop_ethic_pacifist_attraction_mult = 0.50
+			ascension_perks_add = 1
+		}
+		weight = { factor = 1 }
+	}
+	tradition_swap = {
+		name = tr_est_faith_finish_xenophile
+		trigger = {	has_country_flag = flag_est_faith_finish_xenophile }	
+		modifier = {	
+			pop_ethic_xenophile_attraction_mult = 0.50
+			ascension_perks_add = 1
+		}
+		weight = { factor = 1 }
+	}
+	tradition_swap = {
+		name = tr_est_faith_finish_xenophobe
+		trigger = { has_country_flag = flag_est_faith_finish_xenophobe }	
+		modifier = {	
+			pop_ethic_xenophobe_attraction_mult = 0.50
+			ascension_perks_add = 1
+		}
+		weight = { factor = 1 }
+	}
+	tradition_swap = {
+		name = tr_est_faith_finish_pluralist
+		trigger = { has_country_flag = flag_est_faith_finish_pluralist }	
+		modifier = {	
+			pop_ethic_pluralist_attraction_mult = 0.50
+			ascension_perks_add = 1
+		}
+		weight = { factor = 1 }
+	}
+	tradition_swap = {
+		name = tr_est_faith_finish_elitist
+		trigger = { has_country_flag = flag_est_faith_finish_elitist }	
+		modifier = {	
+			pop_ethic_elitist_attraction_mult = 0.50
+			ascension_perks_add = 1
+		}
+		weight = { factor = 1 }
+	}
+	tradition_swap = {
+		name = tr_est_faith_finish_green
+		trigger = { has_country_flag = flag_est_faith_finish_green }	
+		modifier = {	
+			pop_ethic_green_attraction_mult = 0.50
+			ascension_perks_add = 1
+		}
+		weight = { factor = 1 }
+	}
+	tradition_swap = {
+		name = tr_est_faith_finish_industrial
+		trigger = { has_country_flag = flag_est_faith_finish_industrial }	
+		modifier = {	
+			pop_ethic_industrial_attraction_mult = 0.50
+			ascension_perks_add = 1
+		}
+		weight = { factor = 1 }
+	}
+	tradition_swap = {
+		name = tr_est_faith_finish_socialism
+		trigger = { has_country_flag = flag_est_faith_finish_socialism }	
+		modifier = {	
+			pop_ethic_socialism_attraction_mult = 0.50
+			ascension_perks_add = 1
+		}
+		weight = { factor = 1 }
+	}
+	tradition_swap = {
+		name = tr_est_faith_finish_capitalism
+		trigger = { has_country_flag = flag_est_faith_finish_capitalism }	
+		modifier = {	
+			pop_ethic_capitalism_attraction_mult = 0.50
+			ascension_perks_add = 1
+		}
+		weight = { factor = 1 }
+	}
+}
+
+
+# tr_est_faith_1 
+
+# tr_est_faith_2 
+
+# tr_est_faith_3
+
+# tr_est_faith_4 
+
+# tr_est_faith_5 

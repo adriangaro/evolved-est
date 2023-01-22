@@ -21,35 +21,3 @@ tec_is_preservation = {
 tec_is_disregard = {
 	has_ethic = ethic_gestalt_disregard
 }
-
-tec_is_psionic_ascended = {
-	OR = {
-		has_ascension_perk = ap_transcendence
-		has_ascension_perk = ap_tec_biopsionic
-		has_ascension_perk = ap_tec_cyberpsionic
-		has_ascension_perk = ap_tec_hive_psionic_2
-	}
-}
-
-tec_is_biological_ascended = {
-	OR = {
-		has_ascension_perk = ap_evolutionary_mastery
-		has_ascension_perk = ap_tec_biopsionic
-		has_ascension_perk = ap_tec_replicant
-	}
-}
-
-tec_is_cybernetic_ascended = {
-	OR = {
-		has_ascension_perk = ap_tec_cybernetic_fascination
-		has_ascension_perk = ap_tec_cyberpsionic
-		has_ascension_perk = ap_tec_replicant
-	}
-}
-
-tec_is_synthetic_ascended = {
-	OR = {
-		has_ascension_perk = ap_synthetic_evolution
-		has_ascension_perk = ap_tec_replicant
-	}
-}

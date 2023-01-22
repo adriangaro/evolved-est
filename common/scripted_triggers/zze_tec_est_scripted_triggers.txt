@@ -1,0 +1,59 @@
+est_is_evil_dip_empire = {
+	OR = {
+		has_valid_civic = civic_barbaric_despoilers
+		has_valid_civic = civic_fanatic_purifiers
+		has_valid_civic = civic_hive_devouring_swarm
+		has_valid_civic = civic_machine_terminator
+		has_valid_civic = civic_machine_assimilator	
+		tec_is_radical_hive = yes
+		tec_is_parasite_hivemind = yes
+		tec_is_parasite_machine = yes
+	}
+}
+
+est_is_no_dip_empire = {
+	OR = {
+		has_valid_civic = civic_inwards_perfection
+		est_is_evil_dip_empire = yes
+		tec_is_apathic = yes
+		has_modifier = tec_everevolving_primal
+	}
+}
+
+est_uses_robots = {
+	Or = {
+		has_origin = origin_mechanists
+		has_country_flag = est_built_robot
+		has_country_flag = tec_desires_to_build_robots
+	}
+	Not = {
+		has_policy_flag = robots_outlawed
+	}
+}
+
+est_uses_slaves = {
+	Or = {
+		allows_slavery = yes
+	}
+	Not = {
+		has_policy_flag = slavery_not_allowed
+	}
+}
+
+# est_uses_megastructures 
+
+est_no_rivals = {
+	Or = {
+		has_valid_civic = civic_fanatic_purifiers
+		has_valid_civic = civic_inwards_perfection
+		has_valid_civic = civic_hive_devouring_swarm
+		has_valid_civic = civic_machine_terminator
+		has_valid_civic = civic_machine_assimilator		
+		has_valid_civic = civic_tec_universalism
+		tec_is_apathic = yes
+	}
+}
+
+# st_no_fed_federation_builders 
+
+# est_is_core_world 

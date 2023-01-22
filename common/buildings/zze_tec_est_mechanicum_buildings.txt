@@ -1,0 +1,423 @@
+
+#Mechanicum
+building_est_mechanicum_5_guild_of_engineers_1 = {
+	base_buildtime = 360
+	base_cap_amount = 1
+
+	category = research
+
+	resources = {
+		category = planet_buildings
+		inline_script = {
+			script = buildings/resources/inline_evolved_resource_cost
+			tier = 2
+		}
+	}
+	
+	potential = {
+		owner = { 
+			Or = {
+				has_active_tradition = tr_est_mechanicum_5
+				has_active_tradition = tr_est_mechanicum_5_robots
+			}
+		}
+		NOT = { has_modifier = resort_colony }	
+		NOT = { has_modifier = slave_colony }
+	}
+	
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+
+	planet_modifier = {
+		planet_jobs_engineering_research_produces_mult = 0.10
+	}
+
+	inline_script = {
+		script = jobs/inline_evolved_technician
+		regular_count = 3
+		hive_count = 3
+		machine_count = 0
+		machine_aquatic_count = 0
+		mult = 1
+		display = with_desc
+		trigger = ""
+	}
+
+	inline_script = {
+		script = jobs/inline_evolved_technician
+		regular_count = -1
+		hive_count = -1
+		machine_count = 0
+		machine_aquatic_count = 0
+		mult = 1
+		display = no_desc
+		trigger = "
+			tec_has_robotic_buildings = yes
+		"
+	}
+
+	inline_script = {
+		script = jobs/inline_evolved_roboticist
+		count = 1
+		mult = 1
+		display = with_desc
+		trigger = "
+			tec_has_robotic_buildings = yes
+		"
+	}
+
+	inline_script = {
+		script = buildings/effects/inline_evolved_corporate_robocorp
+		tier = 1
+	}
+
+	inline_script = {
+		script = jobs/inline_evolved_job
+		job = est_engineer
+		count = 3
+		mult = 1
+		display = with_desc
+		trigger = "
+			exists = owner
+			owner = { is_regular_empire = yes }
+		"
+	}
+	inline_script = {
+		script = jobs/inline_evolved_job
+		job = est_engineer
+		count = -1
+		mult = 1
+		display = no_desc
+		trigger = "
+			exists = owner
+			owner = { is_regular_empire = yes }
+			tec_has_robotic_buildings = yes
+		"
+	}
+	inline_script = {
+		script = jobs/inline_evolved_researcher
+		count = 3
+		mult = 1
+		display = with_desc
+		trigger = "
+			owner = { is_gestalt = yes }
+		"
+	}
+	inline_script = {
+		script = jobs/inline_evolved_researcher
+		count = -1
+		mult = 1
+		display = no_desc
+		trigger = "
+			owner = { is_gestalt = yes }
+			tec_has_robotic_buildings = yes
+		"
+	}
+	
+	upgrades = {
+		building_est_mechanicum_5_guild_of_engineers_2
+	}
+	
+	ai_resource_production = {
+		trigger = { always = yes }
+		alloys = 5
+	}
+}
+#Mechanicum
+building_est_mechanicum_5_guild_of_engineers_2 = {
+	base_buildtime = 360
+	can_build = no
+
+	category = research
+
+	resources = {
+		category = planet_buildings
+		inline_script = {
+			script = buildings/resources/inline_evolved_resource_cost
+			tier = 3
+		}
+		inline_script = {
+			script = buildings/resources/inline_evolved_rare_resource_cost
+			tier = 2
+			rare = rare_crystals
+		}
+	}
+	
+	potential = {
+		owner = { 
+			Or = {
+				has_active_tradition = tr_est_mechanicum_5
+				has_active_tradition = tr_est_mechanicum_5_robots
+			}
+		}
+		NOT = { has_modifier = resort_colony }	
+		NOT = { has_modifier = slave_colony }
+	}
+	
+	planet_modifier = {
+		planet_jobs_engineering_research_produces_mult = 0.15
+	}
+
+	allow = {
+		has_fully_upgraded_capital = yes
+	}
+	
+	
+	inline_script = {
+		script = jobs/inline_evolved_technician
+		regular_count = 5
+		hive_count = 5
+		machine_count = 0
+		machine_aquatic_count = 0
+		mult = 1
+		display = with_desc
+		trigger = ""
+	}
+
+	inline_script = {
+		script = jobs/inline_evolved_technician
+		regular_count = -1
+		hive_count = -1
+		machine_count = 0
+		machine_aquatic_count = 0
+		mult = 1
+		display = no_desc
+		trigger = "
+			tec_has_robotic_buildings = yes
+		"
+	}
+
+	inline_script = {
+		script = jobs/inline_evolved_roboticist
+		count = 1
+		mult = 1
+		display = with_desc
+		trigger = "
+			tec_has_robotic_buildings = yes
+		"
+	}
+
+	inline_script = {
+		script = buildings/effects/inline_evolved_corporate_robocorp
+		tier = 1
+	}
+
+	inline_script = {
+		script = jobs/inline_evolved_job
+		job = est_engineer
+		count = 5
+		mult = 1
+		display = with_desc
+		trigger = "
+			exists = owner
+			owner = { is_regular_empire = yes }
+		"
+	}
+	inline_script = {
+		script = jobs/inline_evolved_job
+		job = est_engineer
+		count = -1
+		mult = 1
+		display = no_desc
+		trigger = "
+			exists = owner
+			owner = { is_regular_empire = yes }
+			tec_has_robotic_buildings = yes
+		"
+	}
+	inline_script = {
+		script = jobs/inline_evolved_researcher
+		count = 5
+		mult = 1
+		display = with_desc
+		trigger = "
+			owner = { is_gestalt = yes }
+		"
+	}
+	inline_script = {
+		script = jobs/inline_evolved_researcher
+		count = -1
+		mult = 1
+		display = no_desc
+		trigger = "
+			owner = { is_gestalt = yes }
+			tec_has_robotic_buildings = yes
+		"
+	}
+	
+	prerequisites = {
+		"tech_basic_science_lab_3"
+	}
+	
+	ai_resource_production = {
+		trigger = { always = yes }
+		alloys = 5
+	}
+}
+
+#Cybernetics Finish
+building_est_cybernetics_finish_automated_power_plant = {
+	icon = "building_est_cybernetics_finish_automated_power_plant"
+	base_buildtime = 360
+	base_cap_amount = 3
+	
+	resources = {
+		category = planet_buildings
+		inline_script = {
+			script = buildings/resources/inline_evolved_resource_cost
+			tier = 1_half
+		}
+		inline_script = {
+			script = districts/resources/inline_evolved_tec_automation_energy
+			trigger = ""
+			base = 8
+		}
+	}	
+
+	planet_modifier = {
+		district_generator_max = -1
+	}
+	
+	allow = {
+		has_upgraded_capital = yes
+		OR = {
+			num_free_districts = { 
+				type = district_generator
+				value > 0
+			}
+			tec_has_rural_mimics = yes
+			tec_district_ecoworld_swap = yes
+			tec_generator_aqua_district_swap = yes
+			tec_has_infinite_generator_district = yes
+		}
+	}
+	
+	potential = {
+		planet = {
+			OR = {
+				uses_district_set = standard
+				tec_has_rural_mimics = yes
+				from = { tec_has_infinite_generator_district = yes }
+			}
+		}
+		owner = {
+			has_active_tradition = tr_est_cybernetics_finish
+		}
+	}
+
+	ai_weight = {
+		factor = 0 #Hard for AI to use.
+	}	
+}
+#Cybernetics Finish
+building_est_cybernetics_finish_automated_farm = {
+	icon = "building_est_cybernetics_finish_automated_farm"
+	base_buildtime = 360
+	base_cap_amount = 3
+	
+	resources = {
+		category = planet_buildings
+		inline_script = {
+			script = buildings/resources/inline_evolved_resource_cost
+			tier = 1_half
+		}
+		inline_script = {
+			script = districts/resources/inline_evolved_tec_automation_food
+			trigger = ""
+			base = 8
+		}
+	}	
+
+	planet_modifier = {
+		district_farming_max = -1
+	}
+	
+	allow = {
+		has_upgraded_capital = yes
+		OR = {
+			num_free_districts = { 
+				type = district_farming
+				value > 0
+			}
+			tec_has_rural_mimics = yes
+			tec_district_ecoworld_swap = yes
+			tec_farming_aqua_district_swap = yes
+			tec_has_infinite_farming_district = yes
+		}
+	}
+	
+	potential = {
+		planet = {
+			OR = {
+				uses_district_set = standard
+				tec_has_rural_mimics = yes
+				from = { tec_has_infinite_farming_district = yes }
+			}
+		}
+		owner = {
+			has_active_tradition = tr_est_cybernetics_finish
+		}
+	}
+
+	ai_weight = {
+		factor = 0 #Hard for AI to use.
+	}	
+}
+
+#Cybernetics Finish
+building_est_cybernetics_finish_automated_mine = {
+	icon = "building_est_cybernetics_finish_automated_mine"
+	base_buildtime = 360
+	base_cap_amount = 3
+	
+	resources = {
+		category = planet_buildings
+		inline_script = {
+			script = buildings/resources/inline_evolved_resource_cost
+			tier = 1_half
+		}
+		produces = {
+			inline_script = {
+				script = districts/resources/inline_evolved_tec_automation_minerals
+				trigger = ""
+				base = 6
+			}
+		}
+	}	
+
+	planet_modifier = {
+		district_mining_max = -1
+	}
+	
+	allow = {
+		has_upgraded_capital = yes
+		OR = {
+			num_free_districts = { 
+				type = district_mining
+				value > 0
+			}
+			tec_has_rural_mimics = yes
+			tec_district_ecoworld_swap = yes
+			tec_mining_aqua_district_swap = yes
+			tec_has_infinite_mining_district = yes
+		}
+	}
+	
+	potential = {
+		planet = {
+			OR = {
+				uses_district_set = standard
+				tec_has_rural_mimics = yes
+				from = { tec_has_infinite_mining_district = yes }
+			}
+		}
+		owner = {
+			has_active_tradition = tr_est_cybernetics_finish
+		}
+	}
+
+	ai_weight = {
+		factor = 0 #Hard for AI to use.
+	}	
+}

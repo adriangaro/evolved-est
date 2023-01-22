@@ -5,5 +5,5 @@ tags={
 }
 name="Stellaris Evolved + Extended Stellaris Traditions"
 picture="thumbnail.png"
-supported_version="3.1.2"
+supported_version="3.4.5"
 remote_file_id="2656577098"

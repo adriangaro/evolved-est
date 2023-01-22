@@ -1,0 +1,22 @@
+# tr_est_archivist_adopt
+# tr_est_archivist_finish
+# tr_est_archivist_1
+# tr_est_archivist_2
+# tr_est_archivist_3
+# tr_est_archivist_4
+
+tr_est_archivist_5 = {
+	custom_tooltip = tr_est_archivist_5_desc
+	possible = {
+		has_tradition = tr_est_archivist_3
+		has_tradition = tr_est_archivist_4
+	}
+	
+	on_enabled = {
+		country_event = {
+			id = est_archivist.8
+		}
+	}
+
+	ai_weight = { factor = 5000 }
+}

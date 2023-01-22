@@ -10,3 +10,5 @@ tr_est_might_finish:0 "Strength Traditions Finished"
 
 est_faith_finish.option.egalitarian:0 "$ethic_egalitarian$ Ethic"
 est_faith_finish_egalitarian_tooltip:0 "§Y$ethic_egalitarian$ Ethic Attraction§! increased by §G+50%§!."
+
+tr_est_cybernetics_finish_desc:0 "§HUnlocks Buildings:§! £building  $building_est_cybernetics_finish_automated_farm$, $building_est_cybernetics_finish_automated_power_plant$ and $building_est_cybernetics_finish_automated_mine$\n§EThey produce §G8§! £energy  §YEnergy Credits§!/§G8§! £food  §YFood§!/§G6§! £minerals  §YMinerals§! respectively, scaling with equivalent job modifiers, while reducing §Y$mod_district_generator_max$§!/§Y$mod_district_farming_max$§!/§Y$mod_district_mining_max$§! by §Y1§! on the planet. Each planet can, at maximum, contain three of each building.§!\nAscension Perks Unlocked: §G+1§!"

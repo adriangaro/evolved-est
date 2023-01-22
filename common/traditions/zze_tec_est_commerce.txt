@@ -1,0 +1,148 @@
+tr_est_commerce_adopt = {
+	modifier = {
+		job_clerk_add = 3
+	}
+
+	tradition_swap = {
+		name = tr_est_commerce_adopt_machine_traders
+		inherit_name = yes
+
+		trigger = {
+			tec_is_trade_gestalt = yes
+		}	
+		modifier = {
+			job_tec_trade_drone_add = 1
+		}
+		weight = { factor = 1 }
+	}
+}
+
+tr_est_commerce_finish = {
+	modifier = {
+		job_executive_per_pop = 0.02
+		ascension_perks_add = 1
+	}
+
+	tradition_swap = {
+		name = tr_est_commerce_finish_machine_traders
+		inherit_icon = yes
+		inherit_name = yes
+
+		trigger = {
+			tec_is_trade_gestalt = yes
+		}	
+		modifier = {
+			job_tec_trade_drone_per_pop = 0.025
+			ascension_perks_add = 1
+		}
+		weight = { factor = 1 }
+	}
+}
+
+
+# tr_est_commerce_1 
+
+tr_est_commerce_2 = {
+	custom_tooltip = tr_est_commerce_2_desc
+
+	tradition_swap = {
+		custom_tooltip = tr_est_commerce_2_desc
+		name = tr_est_commerce_2_machine_traders
+		inherit_icon = yes
+		trigger = {
+			tec_is_trade_gestalt = yes
+		}	
+		weight = { factor = 1 }
+	}
+
+	ai_weight = { factor = 5000 }	
+}
+
+tr_est_commerce_3 = {
+	possible = {
+		has_tradition = tr_est_commerce_1
+		has_tradition = tr_est_commerce_2
+	}
+	
+	modifier = {
+		trade_value_mult = 0.25
+	}
+
+	tradition_swap = {
+		name = tr_est_commerce_3_machine_traders
+		inherit_icon = yes
+		trigger = {
+			tec_is_trade_gestalt = yes
+		}	
+		
+		modifier = {
+			trade_value_mult = 0.25
+		}
+
+		weight = { factor = 1 }
+	}
+
+	ai_weight = { factor = 5000 }
+}
+
+tr_est_commerce_4 = {
+	possible = { has_tradition = tr_est_commerce_1 }
+
+	modifier = {
+		local_trade_protection_add = 5
+	}
+
+	tradition_swap = {
+		name = tr_est_commerce_4_machine_traders
+		inherit_icon = yes
+
+		trigger = {
+			tec_is_trade_gestalt = yes
+		}	
+		modifier = {
+			local_trade_protection_add = 5
+		}
+		weight = {factor = 1 }
+	}
+
+	ai_weight = { factor = 5000 }
+}
+
+tr_est_commerce_5 = {
+	possible = { has_tradition = tr_est_commerce_4 }
+
+	modifier = {
+		country_trade_attractiveness = 0.05
+		country_trade_fee = -0.05
+	}
+	
+	tradition_swap = {
+		name = tr_est_commerce_5_no_dip
+		inherit_icon = yes
+		trigger = {
+			OR = {
+				has_civic = civic_inwards_perfection
+				has_civic = civic_fanatic_purifiers
+			}
+		}	
+		modifier = {
+			country_trade_fee = -0.10
+		}
+		weight = {factor = 1 }
+	}
+
+	tradition_swap = {
+		name = tr_est_commerce_5_machine_traders
+		inherit_icon = yes
+		trigger = {
+			tec_is_trade_gestalt = yes
+		}	
+		modifier = {
+			country_trade_attractiveness = 0.05
+			country_trade_fee = -0.05
+		}
+		weight = {factor = 1 }
+	}
+
+	ai_weight = { factor = 5000 }
+}

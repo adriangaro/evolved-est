@@ -1,0 +1,30 @@
+tr_est_mechanicum_adopt = {
+	modifier = {
+		ship_hull_mult = 0.10
+		ship_armor_mult = 0.10
+	}
+
+	tradition_swap = {
+		name = tr_est_mechanicum_adopt_robots
+		trigger = {
+			est_uses_robots = yes
+			is_machine_empire = no
+		}
+		modifier = {
+			planet_pops_robotics_upkeep_mult = -0.15
+		}
+		weight = { factor = 1 }
+	}
+}
+
+# tr_est_mechanicum_finish
+
+# tr_est_mechanicum_1 
+
+# tr_est_mechanicum_2
+
+# tr_est_mechanicum_3
+
+# tr_est_mechanicum_4 
+
+# tr_est_mechanicum_5 
