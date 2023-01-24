@@ -377,12 +377,10 @@ building_est_cybernetics_finish_automated_mine = {
 			script = buildings/resources/inline_evolved_resource_cost
 			tier = 1_half
 		}
-		produces = {
-			inline_script = {
-				script = districts/resources/inline_evolved_tec_automation_minerals
-				trigger = ""
-				base = 6
-			}
+		inline_script = {
+			script = districts/resources/inline_evolved_tec_automation_minerals
+			trigger = ""
+			base = 6
 		}
 	}	
 
